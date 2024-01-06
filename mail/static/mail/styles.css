@@ -1,0 +1,153 @@
+textarea {
+  min-height: 400px;
+}
+
+.mail-btn {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 5px 20px;
+  width: 100%;
+  height: 100px;
+  left: 0;
+  background-color: #fff;
+  margin-bottom: 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  box-shadow: 0px 2px 12px 0px rgb(0 0 0 / 10%);
+  transition: 0.5s;
+}
+
+.mail-btn.archive {
+  animation: archive 0.7s forwards;
+}
+
+@keyframes archive {
+  0% {
+    left: 0;
+    margin-bottom: 22px;
+    padding: 5px 20px;
+
+    height: 100px;
+  }
+  75% {
+    left: -110%;
+    margin-bottom: 22px;
+    padding: 5px 20px;
+
+    height: 100px;
+  }
+  100% {
+    left: -110%;
+    padding: 0;
+    height: 0;
+    margin-bottom: 0;
+  }
+}
+
+.mail-btn.read {
+  background-color: #f7f7f7;
+}
+.mail-btn .mail-subject {
+  margin: 0;
+}
+.mail-btn .mail-sender {
+  margin: 0;
+}
+.mail-btn .timestamp {
+  margin-top: 2px;
+  color: #a5a5a5;
+}
+
+.mail-btn .archive-btn {
+  margin-left: auto;
+  border-radius: 15px;
+  height: 38px;
+  width: 92px;
+  text-transform: capitalize;
+  background-color: #f0f8ff;
+  border: none;
+  box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 25%);
+  outline: none;
+  transition: 0.2s;
+}
+
+.mail-btn .archive-btn:hover {
+  background-color: #f7fbff;
+}
+
+.mail-btn .archive-btn:active {
+  background-color: #dde4eb;
+}
+
+.mail-btn .leftside {
+  display: flex;
+  flex-direction: column;
+}
+
+#email-handler {
+  display: flex;
+  width: 200%;
+  position: relative;
+  left: 0;
+  transition: 0.3s left ease-in-out;
+}
+
+#email-view {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  left: 100px;
+}
+
+#emails-view {
+  display: inline-block;
+  width: 100%;
+}
+
+#email-view button img {
+  position: relative;
+  z-index: 2;
+}
+#email-view button {
+  background-color: transparent;
+  position: relative;
+  border-radius: 50px;
+  aspect-ratio: 1;
+  border: none;
+  outline: none;
+}
+
+#email-view button .hovereff {
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  aspect-ratio: 1;
+  width: 0px;
+  height: 0px;
+  transition: 0.2s;
+  z-index: 1;
+}
+
+#email-view button:hover .hovereff {
+  width: 40px;
+  height: 40px;
+}
+
+#email-handler.show-email {
+  left: calc(-100% - 100px);
+  max-height: calc(100vh - 130px);
+}
+
+.container {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#view-body {
+  white-space: pre-wrap;
+}
