@@ -31,10 +31,20 @@ Follow these steps to get your development environment set up:
 4. **Apply the migrations**:
 `python manage.py migrate`
 
-5. **Run the development server**:
+## Setting up Environment variables
+
+5. Make a `.env` file in the root directory and populate it with variables as follows:
+
+```
+SECRET_KEY=your_secret_key_here
+DEBUG=True
+ALLOWED_HOSTS=localhost
+```
+
+7. **Run the development server**:
 `python manage.py runserver`
 
-7. **Access the web application** at `http://localhost:8000`.
+8. **Access the web application** at `http://localhost:8000`.
 
 ## Usage
 
