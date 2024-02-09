@@ -20,10 +20,10 @@ A simple mail app that authenticates users, allows users to send, receive and ar
 
 ### Installation
 
-Follow these steps to get your development environment set up:
+Follow these steps to get your local environment set up:
 
 1. **Clone the repository**:
-`git clone https://github.com/yourusername/django-mail-app.git`
+`git clone https://github.com/fahitosup/mail-app.git`
 
 3. **Install required dependencies**:
 `pip install -r requirements.txt`
