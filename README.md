@@ -16,7 +16,7 @@ This Django Mail Application is a lightweight web-based mail client that allows 
 ### Prerequisites
 
 - Python (3.8 or newer)
-- Django (3.2 or newer)
+- Django (4.0 or newer)
 
 ### Installation
 
