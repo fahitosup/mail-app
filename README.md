@@ -1,4 +1,4 @@
-# Django Mail Application
+# Mail App
 
 ## Overview
 
@@ -38,6 +38,6 @@ Follow these steps to get your development environment set up:
 
 ## Usage
 
-- **Login**: Use your email credentials to log in to the mail application.
+- **Sign Up and Login**: Sign up on the website and log in to the mail application.
 - **Sending Emails**: Navigate to the "Compose" section, fill in the recipient's email, subject, and message, then click "Send".
 - **Inbox**: View received emails in the "Inbox" tab. Click on an email to read its contents.
